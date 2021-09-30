@@ -1,42 +1,32 @@
 {
-    "tasks" : [
-        {
-            "id": 1,
-            "text": "Doctor's Appointment",
-            "date": "May 5  2021",
-            "time": "2:30 pm",
-            "reminder": true
-        },
-    
-        {
-            "id": 2,
-            "text": "Lawyer's Appointment",
-            "date": "May 10 2021",
-            "time": "12:30 pm",
-            "reminder": true
-        }, 
-    
-        {
-            "id": 3,
-            "text": "Banker's Appointment",
-            "date": "May 11 2021",
-            "time": "1:30 pm",
-            "reminder": true
-        },
-
-        {
-            "id": 4,
-            "text": "Test One",
-            "date": "May 10 2021",
-            "time": "12:30 pm",
-            "reminder": true
-        }, 
-        {
-            "id": 5,
-            "text": "Test Two",
-            "date": "May 10 2021",
-            "time": "12:30 pm",
-            "reminder": true
-        }
-    ]
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Doctor's Appointment",
+      "date": "May 10 2021",
+      "time": "12:30 pm",
+      "reminder": true
+    },
+    {
+      "id": 2,
+      "text": "Lawyer's Appointment",
+      "date": "May 10 2021",
+      "time": "12:30 pm",
+      "reminder": true
+    },
+    {
+      "id": 3,
+      "text": "Banker's Appointment",
+      "date": "May 11 2021",
+      "time": "1:30 pm",
+      "reminder": true
+    },
+    {
+      "id": 5,
+      "text": "Banker's Appointment",
+      "date": "May 11 2021",
+      "time": "1:30 pm",
+      "reminder": true
+    }
+  ]
 }

@@ -1,9 +1,14 @@
 import { Injectable } from '@angular/core';
-import {HttpClient, HttpClientModule, HttpHeaders} from '@angular/common/http';
-
+import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Observable} from 'rxjs'
-
 import { TaskInterface } from '../Task';
+
+const httpOptions = {
+  headers: new HttpHeaders({
+    'Content-Type':'appliication/json'
+  })
+}
+
 
 
 @Injectable({
@@ -21,6 +26,14 @@ export class TaskService {
   deleteTask(task: TaskInterface): Observable<TaskInterface>{
     const url = `${this.apiUrl}/${task.id}`;
     return this.http.delete<TaskInterface>(url);
+
+  }
+
+  updateTaskReminder(task: TaskInterface): Observable<TaskInterface>{
+
+    const url = `${this.apiUrl}/${task.id}`;
+    console.log("UPDATE FUNC: ",task)
+    return this.http.put<TaskInterface>(url, task, httpOptions);
 
   }
 

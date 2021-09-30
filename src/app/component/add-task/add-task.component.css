@@ -1,0 +1,58 @@
+.form-container{
+    width: 400px;
+    margin: 20px;
+    margin-left: 0;
+    padding: 10px;
+    color: black;
+}
+
+.form-control {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form-control label {
+    margin-bottom: 5px;
+    display: block;
+    font-size: 1.25rem;
+    font-style:bold;
+}
+
+.reminder {
+    margin-bottom: 5px;
+}
+.button{
+    width: 75%;
+    margin-top: 15px;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+
+.form-control .input {
+    width: 70%;
+    padding: 8px;
+    font-size: 1.25rem;
+}
+
+.button:hover{
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: white;
+    color: black;
+}
+
+.reminder {
+    width: 75%;
+    padding-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    font-size: 1.25rem;
+    justify-content: space-between;
+}

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { TaskInterface } from '../../mock-task';
+import { TaskInterface } from '../../Task';
 
-import {  TaskService } from '../../services/task.service'
+import { TaskService } from '../../services/task.service'
 
 @Component({
   selector: 'app-tasks',
@@ -17,4 +17,12 @@ export class TasksComponent implements OnInit {
   ngOnInit(): void {
     this.taskService.getTasks().subscribe((tasks) => this.tasks= tasks);
   }
+
+  deleteTask(task: TaskInterface){
+    this.taskService.deleteTask(task).subscribe(
+      () => this.tasks= this.tasks?.filter(
+        (t) => t.id !== task.id )
+    );
+  }
+
 }

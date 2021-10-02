@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TaskInterface } from '../../Task';
+import { TaskInterface, Tasks } from '../../Task';
 
 import { TaskService } from '../../services/task.service'
 
@@ -10,7 +10,7 @@ import { TaskService } from '../../services/task.service'
 })
 export class TasksComponent implements OnInit {
  
-  tasks?: TaskInterface[];
+  tasks: TaskInterface[] = Tasks;
 
   constructor(private taskService: TaskService) { }
 
@@ -20,7 +20,7 @@ export class TasksComponent implements OnInit {
 
   deleteTask(task: TaskInterface){
     this.taskService.deleteTask(task).subscribe(
-      () => this.tasks= this.tasks?.filter(
+      () => this.tasks= this.tasks.filter(
         (t) => t.id !== task.id )
     );
   }
@@ -30,5 +30,11 @@ export class TasksComponent implements OnInit {
     console.log(task);
     this.taskService.updateTaskReminder(task).subscribe();
   }
+
+  addTask(task: TaskInterface){
+    console.log(task);
+    this.taskService.addTask(task).subscribe((task) => (this.tasks.push(task)));
+  }
+
 
 }

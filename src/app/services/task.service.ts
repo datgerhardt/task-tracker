@@ -28,11 +28,14 @@ export class TaskService {
     return this.http.delete<TaskInterface>(url);
   }
 
+ // TODO: Fix the add and update have a bug
   updateTaskReminder(task: TaskInterface): Observable<TaskInterface>{
-
     const url = `${this.apiUrl}/${task.id}`;
-    console.log("UPDATE FUNC: ",task) // TODO: Fix the update bug
+    console.log("UPDATE FUNC: ",task) 
     return this.http.put<TaskInterface>(url, task, httpOptions);
   }
-
+  
+  addTask(task: TaskInterface){
+    return this.http.post<TaskInterface>(this.apiUrl, task, httpOptions);
+  }
 }

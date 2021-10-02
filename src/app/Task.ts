@@ -1,5 +1,5 @@
 export interface TaskInterface {
-    id: number;
+    id?: number;
     text: string;
     date: string;
     time: string;

@@ -20,13 +20,6 @@
       "date": "May 11 2021",
       "time": "1:30 pm",
       "reminder": true
-    },
-    {
-      "id": 5,
-      "text": "Banker's Appointment",
-      "date": "May 11 2021",
-      "time": "1:30 pm",
-      "reminder": true
     }
   ]
 }

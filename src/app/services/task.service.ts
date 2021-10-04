@@ -29,9 +29,10 @@ export class TaskService {
   }
 
  // TODO: Fix the add and update have a bug
+ 
   updateTaskReminder(task: TaskInterface): Observable<TaskInterface>{
     const url = `${this.apiUrl}/${task.id}`;
-    console.log("UPDATE FUNC: ",task) 
+    // console.log("UPDATE FUNC: ",task) 
     return this.http.put<TaskInterface>(url, task, httpOptions);
   }
   

@@ -1,6 +1,6 @@
 # Task-tracker
 
-A little [Angular CLI](https://github.com/angular/angular-cli) project.
+A little [Angular](https://github.com/angular/angular-cli) project.
 
 ## Development server
 

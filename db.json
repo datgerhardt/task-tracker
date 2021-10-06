@@ -36,13 +36,6 @@
       "id": 5
     },
     {
-      "text": "Postman Test TTTTTTTTT ",
-      "date": "May 10 2021",
-      "time": "12:30 pm",
-      "reminder": false,
-      "id": 6
-    },
-    {
       "text": "Postman Test For The Tess ",
       "date": "May 10 2021",
       "time": "12:30 pm",
@@ -53,7 +46,7 @@
       "text": "Monday Sucks",
       "date": "Sept. 20 2021",
       "time": "12:30 pm",
-      "reminder": false,
+      "reminder": true,
       "id": 8
     },
     {

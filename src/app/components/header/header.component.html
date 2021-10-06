@@ -1,7 +1,7 @@
 <div class="toolbar" role="banner">
 
     <h1> {{title}}</h1>
-    <div class="button">
+    <div class="button" *ngIf="hasRoute('/')">
         <app-button 
             color="{{ showAddTask ? 'red':'green'}}" 
             text="{{ showAddTask ? 'Close':'Add'}}"
